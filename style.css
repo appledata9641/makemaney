@@ -1,0 +1,44 @@
+
+.blue-bg
+{
+	background-color: #297889;
+}
+
+.blue-text
+{
+	color: #297889
+}
+
+#about
+{
+	background-color : #f8f9fa;
+}
+
+#meet .card-body
+{
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+#meet .card:hover
+{
+	background-color: #297889;
+	color: white;
+}
+#meet i
+{
+	color : white;
+	margin-bottom: 30px;
+}	
+#menu-wrapper {
+	overflow: hidden;
+	height: 60px;
+	background:#f8f9fa;
+}
+#menu {
+	width: 940px;
+	margin: 0px auto;
+}
+.section {
+    padding: 30px;
+}
