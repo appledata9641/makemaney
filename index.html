@@ -58,6 +58,13 @@
 .section {
     padding: 30px;
 }
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
+}
 </style>
 <body>
  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light py-6" id="topnav">
@@ -163,7 +170,7 @@
 					<div class="card text-center text-white blue-bg my-2 my-lg-0">
 						<div class="card-body">
 							<h3 class="card-title">基金</h3>
-							<p class="text-white">基金是發行公司向一群人募集資金，並由基金經理人代為操盤管理。將募集到的錢，投入到符合基金所規範的各種標的。</p><br><hr>
+							<p class="text-white">基金是發行公司向一群人募集資金，並由基金經理人代為操盤管理。將募集到的錢，投入到符合基金所規範的各種標的。</p><hr>
 						</div>
 					</div>
 				</div>
@@ -243,9 +250,9 @@
 			<p><CENTER><font face="Arial" color="#000000" size="6">股票</font></CENTER></p> 
                         <p class="lead mt-3">股票就是擁有公司一部分的所有權。他是一種有價證券，是股份有限公司為了籌資金給投資人該公司所有權的證明。簡單來說持有一張股票，就代表這間公司的一小部分是你的。所以，公司的資產有部分是你的，未來也會按照股份比例分配。而投資者就稱為股東。</p><br><br><br><hr>
 			<p class="lead mt-3">投機股與轉機股：他們的共通點就是獲利長期不固定、股價呈現長期向下的趨勢，且籌碼亂糟糟的-市值小、本益比負值。所以參與者少、成交量也小。但如果有天，某檔投機股瞬間飆漲，帶著市場給予的題材、搖身成為轉機股，大家對他的成見才會大為改觀。其實，以漲幅來論，這類股票飆最快的，常看到創下5~50倍漲幅的標的。因為股份少、籌碼輕盈，加上時勢把他們從低價狗熊變英雄，所以漲幅比那些原本就績優的公司還要高上許多（因為績優公司股價也很高）。這類標的不好選，就算深入研究出其可能的轉機題材、也不知道什麼時候會開始發酵，所以要賺這類股票的錢不只需要有洞見、還需要機運。</p>
-			<div class="row mt-5">		
+			<div class="row">		
 			<div class="col-md-6 col-lg-3">
-    				<div class="card text-center meetcard" >
+    				<div data-aos='zoom-in-up' class="card text-center meetcard" > 
     					<div class="card-body" id="card1">
     						<img src="images/person1.jpg" class="img-fluid mb-3 rounded-circle w-50 author">
     						<h3 class="card-title blue-text" id="t1">藍籌股</h3>
