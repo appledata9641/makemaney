@@ -150,7 +150,7 @@
     <p  id="theRisk">可接受風險程度</p>
        <p  id="howRich">有多少錢</p>
 	  <p  id="theAge">年紀</p>
-	
+	<button id="confirm">確認</button>
 	
 	  </div>
 
@@ -167,14 +167,14 @@
           const para2 = document.getElementById('theRisk');
 	             const para3 = document.getElementById('howRich');
 	             const para4 = document.getElementById('theAge');
-	  
+	  		const para5 = document.getElementById('confirm');
 	     
 
       para.addEventListener('click', updateName);
       para2.addEventListener('click', updateName2);
 	      para3.addEventListener('click', updateName3);
 	      para4.addEventListener('click', updateName4);
-      
+       para5.addEventListener('click', updateName5);
       function updateName() {
             const name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
@@ -183,24 +183,29 @@
             const risk = prompt('你的風險接受程度');
         para2.textContent = `可接受風險程度: ${risk}`;
 	}
-	      function updateName3() {
+	      function updateName3() 
+	    {
             var rich = prompt('你可投資的錢');
 		        
         para3.textContent = `可投資的錢有: ${rich}萬`;
 		      rich1=parseInt(rich);
 	}
-	      function updateName4() {
-           var age = prompt('你的年紀');		      
-        para4.textContent = `你: ${age}歲了`;
-		      	  
-	    age1=parseInt(age);
-	 
-	if(age1>100&&rich1>200)
-{
- document.write(age1);
-}
+	      
+	    
+	    function updateName4() 
+	    {
+          	 var age = prompt('你的年紀');		      
+       		 para4.textContent = `你: ${age}歲了`;		      	  
+	  	  age1=parseInt(age);
+	    }
 
-		       
+ function updateName5() 
+		    {
+          
+		   	if(age1>100&&rich1>200)
+			{
+			 document.write("你投資有點危險啊");
+			}    
 	}
 	  
 	    
