@@ -187,7 +187,7 @@
             var rich = prompt('你可投資的錢');
 		        
         para3.textContent = `可投資的錢有: ${rich}萬`;
-		     
+		      rich1=parseInt(rich);
 	}
 	      function updateName4() {
            var age = prompt('你的年紀');		      
@@ -195,7 +195,7 @@
 		      	  
 	    age1=parseInt(age);
 	 
-	if(age1>100)
+	if(age1>100&&rich>200)
 {
  document.write(age1);
 }
