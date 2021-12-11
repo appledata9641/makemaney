@@ -159,10 +159,10 @@
      var risk
      var rich
      var age
-	    const para = document.getElementById('yourname');
-       const para2 = document.getElementById('theRisk');
-	         const para3 = document.getElementById('howRich');
-	         const para4 = document.getElementById('theAge');
+	    var para = document.getElementById('yourname');
+          var para2 = document.getElementById('theRisk');
+	             var para3 = document.getElementById('howRich');
+	             var para4 = document.getElementById('theAge');
 	  
 	     
 
@@ -172,19 +172,19 @@
 	      para4.addEventListener('click', updateName4);
       
       function updateName() {
-        const name = prompt('Enter a new name');
+            var name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
       }
         function updateName2() {
-        const risk = prompt('你的風險接受程度');
+            var risk = prompt('你的風險接受程度');
         para2.textContent = `可接受風險程度: ${risk}`;
 	}
 	      function updateName3() {
-        const rich = prompt('你可投資的錢');
+            var rich = prompt('你可投資的錢');
         para3.textContent = `可投資的錢有: ${rich}萬`;
 	}
 	      function updateName4() {
-        const age = prompt('你的年紀');
+           var age = prompt('你的年紀');
         para4.textContent = `你: ${age}歲了`;
 	}
 	   
