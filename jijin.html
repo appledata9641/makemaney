@@ -73,6 +73,54 @@
     border-radius: 15px;
     transition: all 0.2s ease-in;
 }
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  width: 30%;
+  background-color: #7d7d7d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #7d7d7d;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+table td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+.main {
+  margin: 20px auto;
+  item-align: center;
+  width: 80%;
+}
 </style>
 <body>
  <nav class="navbar navbar-light fixed-top" style="background-color:#e3f2fd ;"   id="topnav">
@@ -143,7 +191,28 @@ p><CENTER><font face="Arial" color="#000000" size="6">交易成本比其他投�
 <p class="lead mt-3"><CENTER>當購買基金時，因為是交給專業經理人管理，所以除了要負擔手續費之外，還要再額外負擔經理費、保管費與帳戶管理費。</Center></p><br><br>
 <p><CENTER><font face="Arial" color="#000000" size="6">投資者可控性低</font></CENTER></p>
 <p class="lead mt-3"><CENTER>基本上一檔基金中的標的都已決定好，你無法像買股票一樣，近期發現哪一檔表現好再加碼，而是比較被動地讓基金經理人去決策。畢竟，因為基金相較於股票來說，所需要的管理時間較少，所以相對的你也必須犧牲掌控權。</Center></p><br><br><br><hr>   
-     
+<div class="main">
+<table>
+  <tr>
+    <th>可以透過股票市場買賣的商品</th>
+    <td>個股股票</td>
+    <td>ETF (被動式基金)</td>
+  </tr>
+  <tr>
+    <th>可挑選種類</th>
+    <td>各大上市櫃公司</td>
+	  <td>指數ETF、債券ETF、黃金ETF、原物料ETF</td>
+  </tr>
+  <tr>
+    <th>Employees</th>
+    <td>500</td>
+  </tr>
+  <tr>
+    <th>E-mail</th>
+    <td>contact@css-play.com</td>
+  </tr>
+</table>
+</div>     
 	
       </div>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
