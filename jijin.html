@@ -73,55 +73,46 @@
     border-radius: 15px;
     transition: all 0.2s ease-in;
 }
-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table tr{
-  border-bottom: solid 2px white;
-}
-
-table tr:last-child{
-  border-bottom: none;
-}
-
-table th{
-  position: relative;
-  width: 30%;
-  background-color: #7d7d7d;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-table th:after{
-  display: block;
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  top:calc(50% - 10px);
-  right:-10px;
-  border-left: 10px solid #7d7d7d;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-
-table td{
-  text-align: left;
-  width: 70%;
-  text-align: center;
-  background-color: #eee;
-  padding: 10px 0;
-}
-
 .main {
-  margin: 20px auto;
-  item-align: center;
   width: 80%;
+  margin: 20px auto;
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
 }
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+tr {
+  text-align: center;
+}
+th {
+  padding: 10px;
+}
+table tbody tr:nth-child(odd){
+  background-color: #eee
+}
+table thead {
+  background-color: blue;
+  color: white;
+}
+table thead th:first-child {
+  border-radius: 5px 0 0 0;
+  border: 1px solid blue;
+}
+table thead th:last-child {
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid blue;
+}
+table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
 </style>
+	
 <body>
  <nav class="navbar navbar-light fixed-top" style="background-color:#e3f2fd ;"   id="topnav">
 		<div class="container">
