@@ -18,20 +18,26 @@
         display: inline-block;
         cursor: pointer;
       }
+      title 
+      {
+         background: rgba(0,60,100,85);
+      
+      }
     </style>
   </head>
   <body>
-    <h1>你得名字</h1>
-    <p>可接受風險程度</p>
+   <h1 id = "title "> 投資建議大師</h1>
+    <h1 id="yourname">你得名字</h2>
+    <p  id="theRisk">可接受風險程度</p>
        
 
     <script>
-      const para = document.querySelector('h1');
+      const para = document.querySelector('h2');
        const para2 = document.querySelector('p');
 
       para.addEventListener('click', updateName);
       para2.addEventListener('click', updateName2);
-    
+      
       function updateName() {
         const name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
