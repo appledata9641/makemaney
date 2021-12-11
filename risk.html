@@ -147,11 +147,19 @@
 	  <h1 id = "title"> 投資建議大師</h1>
     <h2 id="yourname">你得名字</h2>
     <p  id="theRisk">可接受風險程度</p>
-       </div>
+       <p  id="howRich">有多少錢</p>
+	  <p  id="theAge">年紀</p>
+	
+	
+	  </div>
 
     <script>
       const para = document.getElementById('yourname');
        const para2 = document.getElementById('theRisk');
+	         const para3 = document.getElementById('howRich');
+	         const para4 = document.getElementById('theAge');
+	  
+	     
 
       para.addEventListener('click', updateName);
       para2.addEventListener('click', updateName2);
@@ -163,22 +171,15 @@
         function updateName2() {
         const risk = prompt('你的風險接受程度');
         para2.textContent = `可接受風險程度: ${risk}`;
-      if(risk==='高')
-        {
-        document.write("哥哥母湯喔") ;
-          document.write("<br/>") ;
-        }
-            if(risk==='中')
-        {
-        document.write("哥哥還可以喔") ;
-          document.write("<br/>") ;
-        }
-            if(risk==='低')
-        {
-        document.write("哥哥很讚喔") ;
-          document.write("<br/>") ;
-        }
-        }
+	}
+	      function updateName3() {
+        const rich = prompt('你可投資的錢');
+        para3.textContent = `可投資的錢有: ${rich}萬`;
+	}
+	      function updateName4() {
+        const age = prompt('你的年紀');
+        para4.textContent = `你: ${age}歲了`;
+	}
     </script>
   
 	
