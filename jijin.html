@@ -76,7 +76,10 @@
 .main {
   width: 80%;
   margin: 20px auto;
-  box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+	border: none;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    transition: all 0.2s ease-in;
 }
 table {
   border-spacing: 0;
@@ -92,16 +95,17 @@ table tbody tr:nth-child(odd){
   background-color: #eee
 }
 table thead {
-  background-color: blue;
-  color: white;
+  background-color: #297889;
+   color: white;
 }
 table thead th:first-child {
   border-radius: 5px 0 0 0;
-  border: 1px solid blue;
+  border: 1px #eee
+    
 }
 table thead th:last-child {
   border-radius: 0 5px 0 0;
-  border-right: 1px solid blue;
+  border-right: 1px #eee
 }
 table tbody tr:last-child td:first-child {
   border-radius: 0 0 0 5px;
@@ -110,7 +114,6 @@ table tbody tr:last-child td:first-child {
 table tbody tr:last-child td:last-child {
   border-radius: 0 0 5px 0;
 }
-
 </style>
 	
 <body>
@@ -192,14 +195,14 @@ p><CENTER><font face="Arial" color="#000000" size="6">交易成本比其他投�
   </thead>
   <tbody>
     <tr>
-      <td><p class="blue-bg">個股股票</p></td>
+      <td><p class="blue-text">個股股票</p></td>
       <td>各大上市櫃公司</td>
       <td>偏高
 </td>
       <td>建議先從績優股開始</td>
     </tr>
     <tr>
-      <td><p class="blue-bg">ETF (被動式基金)</td>
+      <td><p class="blue-text">ETF (被動式基金)</td>
       <td>指數ETF、債券ETF、黃金ETF、原物料ETF</td>
       <td>偏低
 (但挑錯ETF風險也還是很高)</td>
