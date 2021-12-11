@@ -27,12 +27,18 @@
 
     <script>
       const para = document.querySelector('h1');
+       const para2 = document.querySelector('p');
 
       para.addEventListener('click', updateName);
-
+      para2.addEventListener('click', updateName2);
+    
       function updateName() {
         const name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
+      }
+        function updateName2() {
+        const name = prompt('你的風險接受程度');
+        para2.textContent = `你的風險接受程度: ${name}`;
       }
     </script>
   </body>
