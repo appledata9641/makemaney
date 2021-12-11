@@ -155,14 +155,18 @@
 	  </div>
 
     <script>
-     var name
-     var risk
-     var rich
-     var age
-	    var para = document.getElementById('yourname');
-          var para2 = document.getElementById('theRisk');
-	             var para3 = document.getElementById('howRich');
-	             var para4 = document.getElementById('theAge');
+     var name1
+     var risk1
+     var rich1
+     var age1
+      var name2
+     var risk2
+     var rich2
+     var age2
+	    const para = document.getElementById('yourname');
+          const para2 = document.getElementById('theRisk');
+	             const para3 = document.getElementById('howRich');
+	             const para4 = document.getElementById('theAge');
 	  
 	     
 
@@ -172,34 +176,29 @@
 	      para4.addEventListener('click', updateName4);
       
       function updateName() {
-            var name = prompt('Enter a new name');
+            const name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
       }
         function updateName2() {
-            var risk = prompt('你的風險接受程度');
+            const risk = prompt('你的風險接受程度');
         para2.textContent = `可接受風險程度: ${risk}`;
 	}
 	      function updateName3() {
-            var rich = prompt('你可投資的錢');
+            cosnt rich = prompt('你可投資的錢');
         para3.textContent = `可投資的錢有: ${rich}萬`;
+		      rich1= parseInt(rich);
 	}
 	      function updateName4() {
-           var age = prompt('你的年紀');
+           cosnt age = prompt('你的年紀');
         para4.textContent = `你: ${age}歲了`;
+		       age1= parseInt(age);
 	}
 	   
-	   
-	   para3= parseInt(para3);
-	     para4 = parseInt(para4);
+	   document.write(age1);
+	    document.write(rich1);
+
 	
-	    document.write(para3+para4);
-		      document.write(para3+para4);
-	      document.write(para3+para4);
-	      document.write(para3+para4);
-	      document.write(para3+para4);
-	      document.write(para3+para4);
-	      document.write(para3+para4);
-	      document.write(para3+para4);
+	  
 	    
 		    
     </script>
