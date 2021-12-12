@@ -186,8 +186,9 @@
         para.textContent = `${name}`;
       }
         function updateName2() {
-            const risk = prompt('你的風險接受程度  (請輸入低(損失<10%) 中(損失<50%) 高(損失>50%))');
-        para2.textContent = `可接受風險程度: ${risk}`;
+            const risk = prompt('你的風險接受程度  (低(損失<10%) 中(損失<50%) 高(損失>50%))');
+        para2.textContent = `可接受風險程度: ${risk} %的損失`;
+		 risk1=parseInt(risk);
 		
 	}
 	      function updateName3() 
@@ -222,7 +223,7 @@
 		    }
 	    function updateName5() 
 		    {
-          		  if(risk1==='高')
+          		  if(risk1>50)
 					{
 				document.write("哥哥母湯喔") ;
 				  document.write("<br/>") ;
