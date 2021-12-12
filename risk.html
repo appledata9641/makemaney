@@ -150,8 +150,9 @@
     <p  id="theRisk">可接受風險程度</p>
        <p  id="howRich">有多少錢</p>
 	  <p  id="theAge">年紀</p>
-	<button id="confirm">確認</button>
 	  <label ><input id="fcoin" type="checkbox" > 平常有無常出國以及了解各國發展還有幣別</label>
+	 <button id="confirm">確認</button>
+	
 	  </div>
 
     <script>
@@ -182,7 +183,7 @@
 	 
       function updateName() {
             const name = prompt('Enter a new name');
-        para.textContent = ` ${name}`;
+        para.textContent = `${name}`;
       }
         function updateName2() {
             const risk = prompt('你的風險接受程度');
@@ -204,7 +205,21 @@
 	  	  age1=parseInt(age);
 	    }
 
- function updateName5() 
+   
+	     function updateName6() 
+		    {
+          
+		   	if(fcoin===false)
+			{
+			fcoin = true;
+			}    
+			if(fcoin === true)
+			{
+			fcoin = false;
+			}
+		    		
+		    }
+	    function updateName5() 
 		    {
           		if(fcoin === true )
 			{
@@ -221,20 +236,7 @@
 			    
 			    }
 		   
-	  
-	     function updateName6() 
-		    {
-          
-		   	if(fcoin===false)
-			{
-			fcoin = true;
-			}    
-			if(fcoin === true)
-			{
-			fcoin = false;
-			}
-		    		
-		    }
+	
 		    
     </script>
   
