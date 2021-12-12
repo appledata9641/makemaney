@@ -150,7 +150,7 @@
     <p  id="theRisk">可接受風險程度</p>
        <p  id="howRich">有多少錢</p>
 	  <p  id="theAge">年紀</p>
-<p><label for="fcoin"><input id="fcoin" type="checkbox" name="personality"> 平常有無常出國以及了解各國發展還有幣別</label><p>
+<p><label for="haha"><input id="fcoin" type="checkbox" name="personality"> 平常有無常出國以及了解各國發展還有幣別</label><p>
 	 <button id="confirm">確認</button>
 	
 	  </div>
@@ -209,11 +209,11 @@
 	     function updateName6() 
 		    {
           
-		   	if(fcoin===false)
+		   	if(this.checked)
 			{
 			fcoin = true;
 			}    
-			if(fcoin === true)
+			else
 			{
 			fcoin = false;
 			}
@@ -228,7 +228,7 @@
 				 document.write("你可以試試看外幣");
 				}    
 			}
-			    else
+			    if(fcoin === false)
 			    {
 			    
 			     document.write("你可以試試看股票");
