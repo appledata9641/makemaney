@@ -151,30 +151,35 @@
        <p  id="howRich">有多少錢</p>
 	  <p  id="theAge">年紀</p>
 	<button id="confirm">確認</button>
-	
+	  <label ><input id="fcoin" type="checkbox" > 平常有無常出國以及了解各國發展還有幣別</label>
 	  </div>
 
     <script>
-     var name1
-     var risk1
-     var rich1
-     var age1
-      var name
-     var risk
-     var rich
-     var age
+     var name1;
+     var risk1;
+     var rich1;
+     var age1;
+     var fcoin1; 
+      var name;
+     var risk;
+     var rich;
+     var age;
+     var fcoin=false;
 	    const para = document.getElementById('yourname');
           const para2 = document.getElementById('theRisk');
 	             const para3 = document.getElementById('howRich');
 	             const para4 = document.getElementById('theAge');
 	  		const para5 = document.getElementById('confirm');
-	     
+	     		const para6 = document.getElementById('fcoin');
+	     		
 
       para.addEventListener('click', updateName);
       para2.addEventListener('click', updateName2);
 	      para3.addEventListener('click', updateName3);
 	      para4.addEventListener('click', updateName4);
-       para5.addEventListener('click', updateName5);
+      	   para5.addEventListener('click', updateName5);	
+	    para6.addEventListener('click', updateName6);
+	 
       function updateName() {
             const name = prompt('Enter a new name');
         para.textContent = ` ${name}`;
@@ -201,14 +206,35 @@
 
  function updateName5() 
 		    {
-          
-		   	if(age1>100&&rich1>200)
+          		if(fcoin === true )
 			{
-			 document.write("你投資有點危險啊");
-			}    
-	}
+				if(age1>100&&rich1>200)
+				{
+				 document.write("你可以試試看外幣");
+				}    
+			}
+			    else
+			    {
+			    
+			     document.write("你可以試試看股票");
+			    
+			    
+			    }
+		   
 	  
-	    
+	     function updateName6() 
+		    {
+          
+		   	if(fcoin===false)
+			{
+			fcoin = true;
+			}    
+			if(fcoin === true)
+			{
+			fcoin = false;
+			}
+		    		
+		    }
 		    
     </script>
   
