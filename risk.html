@@ -223,7 +223,7 @@
 		    }
 	    function updateName5() 
 		    {
-          		  if(risk1>50)
+          		  if(risk1>=50)
 					{
 				document.write("哥哥母湯喔") ;
 				  document.write("<br/>") ;
@@ -238,15 +238,31 @@
 		       if(fcoin===false)
 		       {
 				
-				 if (age1<30 && 50 <= rich1 )
+				 if (age1<=30 && 50 <= rich1 )
 					 {				    
 					 document.write("你可以試試看期貨");
 				   }
-				if (age1<30 && 20 < rich1 && rich1 < 50)
+				if (age1<=30 && 20 < rich1 && rich1 < 50)
 				    {
 					document.write("你可以試試看股票");
 				    }
-				if (age1<30 &&  0 < rich1 && rich1 <=20 )
+				if (age1<=30 &&  0 < rich1 && rich1 <=20 )
+				    {
+					document.write("你可以債券XD");
+				    }
+
+
+
+
+					if (age1>30 && 50 <= rich1 )
+					 {				    
+					 document.write("你可以試試看股票");
+				   }
+				if (age1>30 && 20 < rich1 && rich1 < 50)
+				    {
+					document.write("你可以試試看存錢");
+				    }
+				if (age1>30 &&  0 < rich1 && rich1 <=20 )
 				    {
 					document.write("你可以存錢XD");
 				    }
