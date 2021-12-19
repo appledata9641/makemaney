@@ -2,4 +2,5 @@ html
 {
    background-image: url("https://www.cathayrobo.com/welcome/-/media/087a708bbb50488eb0da6770e8a00192.jpg?h=532&iar=0&w=800&sc_lang=en&hash=F6AAF21E7069356AE49D81CCBA455B5E");
    background-repeat: no-repeat;
+   background-size: cover;
 }
