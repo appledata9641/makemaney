@@ -2,4 +2,14 @@ html
 {
    background-image: url("https://cimg.cnyes.cool/prod/news/4634307/l/ab4ca016bf1bbbca0b4dcc59cfae7bdf.jpg");
    background-repeat: no-repeat;
+   box
+   {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: -10000;
+   }
 }
