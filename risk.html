@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link href="risk.css" rel="stylesheet" type="text/css"> 
+  
 </head>
 <style>
 .blue-overlay
@@ -137,9 +137,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="risk.html">風險</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="source.html">資料來源</a>
-					</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -148,7 +146,7 @@
  <div>
    <h1 > 投資建議大師</h1>
 	  <h1 id = "title"> 投資建議大師</h1>
-    <h2 id="yourname">你的名字</h2>
+    <h2 id="yourname">你得名字</h2>
     <p  id="theRisk">可接受風險程度</p>
        <p  id="howRich">有多少錢</p>
 	  <p  id="theAge">年紀</p>
@@ -156,7 +154,7 @@
 	 <button id="confirm">確認</button>
 	
 	  </div>
-	  
+
     <script>
      var name1;
      var risk1;
@@ -225,58 +223,275 @@
 		    }
 	    function updateName5() 
 		    {
-          		  if(risk1>=50)
-					{
-				document.write("哥哥母湯喔") ;
-				  document.write("<br/>") ;
-				  const a = prompt("你可能適合投胎,這是投胎用的投資建議網站");
-				  window.location.href = "stock.html";
-
-				 }
+          	
 			    if(fcoin === true)
-			{
-				if(age1<30&&rich1>1000)
 				{
-				 document.write("你可以試試看外幣");
-				 const a = prompt("這是介紹外幣的網站");
-				}    
-			}
+					if(age1<30&&rich1>1000)
+					{
+					document.write("你可以試試看外幣");
+					const a = prompt("這是介紹外幣的網站");
+					window.location.href = "waibi.html";
+					}    
+				}
 		       if(fcoin===false)
 		       {
+					if(risk1>50)
+					{
+						if(age1 < 30)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合期貨,這是介紹期貨的網站,請按ENTER進入網站");
+								window.location.href = "qihuo.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合股票,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合選擇權,這是介紹選擇權的網站,請按ENTER進入網站");
+								window.location.href = "xuanze.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("還是先存錢八");
+								window.location.href = "risk.html";
+							}
+						}
 				
-				 if (age1<=30 && 50 <= rich1 )
-					 {				    
-					 document.write("你可以試試看期貨");
-				   }
-				if (age1<=30 && 20 < rich1 && rich1 < 50)
-				    {
-					document.write("你可以試試看股票");
-				    }
-				if (age1<=30 &&  0 < rich1 && rich1 <=20 )
-				    {
-					document.write("你可以債券XD");
-				    }
-
-
-
-
-					if (age1>30 && 50 <= rich1 )
-					 {				    
-					 document.write("你可以試試看股票");
-				   }
-				if (age1>30 && 20 < rich1 && rich1 < 50)
-				    {
-					document.write("你可以試試看存錢");
-				    }
-				if (age1>30 &&  0 < rich1 && rich1 <=20 )
-				    {
-					document.write("你可以存錢XD");
-				    }
+						if(30<=age1&&age1 < 70)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合股票,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合股票,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("你可以先存錢等有一定資金再說,還是先存錢八,請按ENTER進入網站");
+								window.location.href = "risk.html";
+							}
+						}
+						if(age1 > 70)
+						{
+							const a = prompt("我們認為你的年紀已高,接受的風險太高不太好,請調整你的風險,請按ENTER進入網站");
+								window.location.href = "risk.html";
+						}
 				
-		      }			   
-	  }
+					}
+
+
+
+					if(10<risk1&&risk1<=50)
+					{
+						if(age1 < 30)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合期貨,這是介紹期貨的網站,請按ENTER進入網站");
+								window.location.href = "qihuo.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合股票,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("還是先存錢八");
+								window.location.href = "risk.html";
+							}
+						}
+				
+						if(30<=age1&&age1 < 70)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合股票,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合股票,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("你可以先存錢等有一定資金再說,還是先存錢八,請按ENTER進入網站");
+								window.location.href = "risk.html";
+							}
+						}
+						if(age1 > 70)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合房地產,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "budongchan.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合債券,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "zhaijuan.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("你可以先存錢等有一定資金再說,還是先存錢八,請按ENTER進入網站");
+								window.location.href = "risk.html";
+							}
+						}
+				
+
+
+
+						
+					}
+				
+
+
+
+					if(risk1<=10)
+					{
+						if(age1 < 30)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合股票,這是介紹期貨的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合債券,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "zhaijuan.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("我們認為你適合儲蓄險,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "chuxuxian.html";
+							}
+						}
+				
+						if(30<=age1&&age1 < 70)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合股票,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "gupiao3.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合債券,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "zhaijuan.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("你可以先存錢等有一定資金再說,還是先存錢八,請按ENTER進入網站");
+								window.location.href = "risk.html";
+							}
+						}
+						if(age1 > 70)
+						{
+							if(rich1>700)
+							{
+							
+								const a = prompt("我們認為你適合房地產,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "budongchan.html";
+							}
+							if(50<rich1&&rich1<=700)
+							{
+						
+								const a = prompt("我們認為你適合債券,這是介紹股票的網站,請按ENTER進入網站");
+								window.location.href = "zhaijuan.html";
+							}
+							if(10<rich1&&rich1<=50)
+							{
+							
+								const a = prompt("我們認為你適合基金,這是介紹基金的網站,請按ENTER進入網站");
+								window.location.href = "jijin.html";
+							}
+							if(rich1<=10)
+							{
+							
+								const a = prompt("你可以先存錢等有一定資金再說,還是先存錢八,請按ENTER進入網站");
+								window.location.href = "risk.html";
+							}
+						}
+				
+
+
+
+						
+					}
+
+			 	}			
+				    
+	 		 }
 	    	
-		    
+	
   		
 	  </script>
   
