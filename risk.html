@@ -226,14 +226,22 @@
 	    function updateName5() 
 		    {
           	
-			    if(fcoin === true)
+			   if(fcoin === true)
 				{
-					if(age1<30&&rich1>1000)
+					if(age1<65&&rich1>10)
 					{
 					document.write("你可以試試看外幣");
-					const a = prompt("這是介紹外幣的網站");
+					const a = prompt("我們認為你適合外幣,這是介紹外幣的網站,請按ENTER進入網站");
 					window.location.href = "waibi.html";
 					}    
+					else
+					{
+			
+					const a = prompt("我們認為你還是先存錢好了,請按ENTER跳回網站");
+					window.location.href = "risk.html";		
+
+
+					}
 				}
 		       if(fcoin===false)
 		       {
